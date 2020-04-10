@@ -1,0 +1,1142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/ali/src/kicad/projects/reservoir_controller/reservoir_controller.sch</source>
+    <date>Fri 23 Nov 2018 13:11:57 CET</date>
+    <tool>Eeschema 6.0.0-rc1-unknown-f2ccad3~66~ubuntu16.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>reservoir_controller.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/ESP-12E/" tstamps="/5B45FE56/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>ESP-12E.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Feed pump/" tstamps="/5B4601EA/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>fet_output.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/analogue_buttons/" tstamps="/5B46169A/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Buttons.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/Power/Error LED/" tstamps="/5B46169D/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>led.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/Reservoir full/" tstamps="/5B4616A0/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>level_input.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="7" name="/Fill pump/" tstamps="/5B461AAC/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>fet_output.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="8" name="/Mix pump/" tstamps="/5B461ABE/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>fet_output.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="9" name="/Reservoir empty/" tstamps="/5B461ACF/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>level_input.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="10" name="/Reservoir Empty LED/" tstamps="/5B461AE0/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>led.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="11" name="/Reservoir full LED/" tstamps="/5B461AF1/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>led.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="12" name="/LM2594/" tstamps="/5B463A7B/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>lm2594.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="13" name="/Mechanical/" tstamps="/5B5268D3/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>mechanical.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>ESP-12E</value>
+      <footprint>alis_parts:ESP-12E</footprint>
+      <datasheet>/home/ali/src/kicad/projects/reservoir_controller/datasheets/esp8266-esp12e-specs.pdf</datasheet>
+      <fields>
+        <field name="Chip Datasheet">/home/ali/src/kicad/projects/reservoir_controller/datasheets/0a-esp8266ex_datasheet_en.pdf</field>
+        <field name="GDBStub">https://github.com/espressif/esp-gdbstub</field>
+        <field name="GDBStub Instructions">https://blog.attachix.com/live-debugging-with-open-source-tools-programming-for-esp8266-part-4/</field>
+      </fields>
+      <libsource lib="alis_parts" part="ESP-12E" description=""/>
+      <sheetpath names="/ESP-12E/" tstamps="/5B45FE56/"/>
+      <tstamp>5B45FFC8</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>ESP UART</value>
+      <footprint>alis_parts:Pin_Header_Straight_2x03_Pitch2.54mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="reservoir_controller-rescue" part="Conn_02x03_Counter_Clockwise-conn-autodoser-rescue" description=""/>
+      <sheetpath names="/ESP-12E/" tstamps="/5B45FE56/"/>
+      <tstamp>5B45FFCF</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <footprint>alis_parts:R_0603</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/ESP-12E/" tstamps="/5B45FE56/"/>
+      <tstamp>5B45FFE1</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <footprint>alis_parts:R_0603</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/ESP-12E/" tstamps="/5B45FE56/"/>
+      <tstamp>5B46000F</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>QM3006D</value>
+      <footprint>alis_parts:TO-252-2</footprint>
+      <libsource lib="Device" part="Q_NMOS_GDS" description="N-MOSFET transistor, gate/drain/source"/>
+      <sheetpath names="/Feed pump/" tstamps="/5B4601EA/"/>
+      <tstamp>5A37E07E</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>100n</value>
+      <footprint>alis_parts:C_0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Feed pump/" tstamps="/5B4601EA/"/>
+      <tstamp>5A37E101</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>1N4148</value>
+      <footprint>alis_parts:D_SOD-323</footprint>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/Feed pump/" tstamps="/5B4601EA/"/>
+      <tstamp>5A37E17A</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x02</value>
+      <footprint>alis_parts:Pin_Header_Straight_1x02_Pitch2.54mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Feed pump/" tstamps="/5B4601EA/"/>
+      <tstamp>5A37E591</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>alis_parts:R_0603</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Feed pump/" tstamps="/5B4601EA/"/>
+      <tstamp>5A37E6DD</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>alis_parts:LED-0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Feed pump/" tstamps="/5B4601EA/"/>
+      <tstamp>5A3D73F5</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>330</value>
+      <footprint>alis_parts:R_0603</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Feed pump/" tstamps="/5B4601EA/"/>
+      <tstamp>5A3D7784</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_PUSH</value>
+      <footprint>alis_parts:BUTTON_5.1</footprint>
+      <libsource lib="alis_parts" part="SW_PUSH" description=""/>
+      <sheetpath names="/analogue_buttons/" tstamps="/5B46169A/"/>
+      <tstamp>5B4624A2</tstamp>
+    </comp>
+    <comp ref="SW2">
+      <value>SW_PUSH</value>
+      <footprint>alis_parts:BUTTON_5.1</footprint>
+      <libsource lib="alis_parts" part="SW_PUSH" description=""/>
+      <sheetpath names="/analogue_buttons/" tstamps="/5B46169A/"/>
+      <tstamp>5B4624EA</tstamp>
+    </comp>
+    <comp ref="SW3">
+      <value>SW_PUSH</value>
+      <footprint>alis_parts:BUTTON_5.1</footprint>
+      <libsource lib="alis_parts" part="SW_PUSH" description=""/>
+      <sheetpath names="/analogue_buttons/" tstamps="/5B46169A/"/>
+      <tstamp>5B46252A</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>1R</value>
+      <footprint>alis_parts:R_0603</footprint>
+      <libsource lib="pspice" part="R" description="Resistor symbol for simulation only"/>
+      <sheetpath names="/analogue_buttons/" tstamps="/5B46169A/"/>
+      <tstamp>5B46259D</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>1k</value>
+      <footprint>alis_parts:R_0603</footprint>
+      <libsource lib="pspice" part="R" description="Resistor symbol for simulation only"/>
+      <sheetpath names="/analogue_buttons/" tstamps="/5B46169A/"/>
+      <tstamp>5B4625F8</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>4k7</value>
+      <footprint>alis_parts:R_0603</footprint>
+      <libsource lib="pspice" part="R" description="Resistor symbol for simulation only"/>
+      <sheetpath names="/analogue_buttons/" tstamps="/5B46169A/"/>
+      <tstamp>5B462639</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>12k</value>
+      <footprint>alis_parts:R_0603</footprint>
+      <libsource lib="pspice" part="R" description="Resistor symbol for simulation only"/>
+      <sheetpath names="/analogue_buttons/" tstamps="/5B46169A/"/>
+      <tstamp>5B462992</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>4k7</value>
+      <footprint>alis_parts:R_0603</footprint>
+      <libsource lib="pspice" part="R" description="Resistor symbol for simulation only"/>
+      <sheetpath names="/analogue_buttons/" tstamps="/5B46169A/"/>
+      <tstamp>5B462A19</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>LED</value>
+      <footprint>alis_parts:LED-0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Power/Error LED/" tstamps="/5B46169D/"/>
+      <tstamp>5A4125F9</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>330</value>
+      <footprint>alis_parts:R_0603</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Power/Error LED/" tstamps="/5B46169D/"/>
+      <tstamp>5A4125FC</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>10k</value>
+      <footprint>alis_parts:R_0603</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Reservoir full/" tstamps="/5B4616A0/"/>
+      <tstamp>5A400B29</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Level Input</value>
+      <footprint>alis_parts:Pin_Header_Straight_1x02_Pitch2.54mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Reservoir full/" tstamps="/5B4616A0/"/>
+      <tstamp>5A3C5300</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>PC817</value>
+      <footprint>alis_parts:SO-4_7.6x3.6mm_Pitch2.54mm</footprint>
+      <datasheet>/home/ali/src/kicad/projects/reservoir_controller/datasheets/EL817.pdf</datasheet>
+      <libsource lib="Isolator" part="PC817" description="DC Optocoupler, Vce 35V, CTR 50-300%, DIP4"/>
+      <sheetpath names="/Reservoir full/" tstamps="/5B4616A0/"/>
+      <tstamp>5B507D88</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>330</value>
+      <footprint>alis_parts:R_0603</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Reservoir full/" tstamps="/5B4616A0/"/>
+      <tstamp>5B5080EC</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>QM3006D</value>
+      <footprint>alis_parts:TO-252-2</footprint>
+      <libsource lib="Device" part="Q_NMOS_GDS" description="N-MOSFET transistor, gate/drain/source"/>
+      <sheetpath names="/Fill pump/" tstamps="/5B461AAC/"/>
+      <tstamp>5A37E07E</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>100n</value>
+      <footprint>alis_parts:C_0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Fill pump/" tstamps="/5B461AAC/"/>
+      <tstamp>5A37E101</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>1N4148</value>
+      <footprint>alis_parts:D_SOD-323</footprint>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/Fill pump/" tstamps="/5B461AAC/"/>
+      <tstamp>5A37E17A</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>Conn_01x02</value>
+      <footprint>alis_parts:Pin_Header_Straight_1x02_Pitch2.54mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Fill pump/" tstamps="/5B461AAC/"/>
+      <tstamp>5A37E591</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>10k</value>
+      <footprint>alis_parts:R_0603</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Fill pump/" tstamps="/5B461AAC/"/>
+      <tstamp>5A37E6DD</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>LED</value>
+      <footprint>alis_parts:LED-0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Fill pump/" tstamps="/5B461AAC/"/>
+      <tstamp>5A3D73F5</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>330</value>
+      <footprint>alis_parts:R_0603</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Fill pump/" tstamps="/5B461AAC/"/>
+      <tstamp>5A3D7784</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>QM3006D</value>
+      <footprint>alis_parts:TO-252-2</footprint>
+      <libsource lib="Device" part="Q_NMOS_GDS" description="N-MOSFET transistor, gate/drain/source"/>
+      <sheetpath names="/Mix pump/" tstamps="/5B461ABE/"/>
+      <tstamp>5A37E07E</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>100n</value>
+      <footprint>alis_parts:C_0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Mix pump/" tstamps="/5B461ABE/"/>
+      <tstamp>5A37E101</tstamp>
+    </comp>
+    <comp ref="D7">
+      <value>1N4148</value>
+      <footprint>alis_parts:D_SOD-323</footprint>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/Mix pump/" tstamps="/5B461ABE/"/>
+      <tstamp>5A37E17A</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>Conn_01x02</value>
+      <footprint>alis_parts:Pin_Header_Straight_1x02_Pitch2.54mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Mix pump/" tstamps="/5B461ABE/"/>
+      <tstamp>5A37E591</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>10k</value>
+      <footprint>alis_parts:R_0603</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Mix pump/" tstamps="/5B461ABE/"/>
+      <tstamp>5A37E6DD</tstamp>
+    </comp>
+    <comp ref="D6">
+      <value>LED</value>
+      <footprint>alis_parts:LED-0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Mix pump/" tstamps="/5B461ABE/"/>
+      <tstamp>5A3D73F5</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>330</value>
+      <footprint>alis_parts:R_0603</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Mix pump/" tstamps="/5B461ABE/"/>
+      <tstamp>5A3D7784</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>10k</value>
+      <footprint>alis_parts:R_0603</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Reservoir empty/" tstamps="/5B461ACF/"/>
+      <tstamp>5A400B29</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>Level Input</value>
+      <footprint>alis_parts:Pin_Header_Straight_1x02_Pitch2.54mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Reservoir empty/" tstamps="/5B461ACF/"/>
+      <tstamp>5A3C5300</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>PC817</value>
+      <footprint>alis_parts:SO-4_7.6x3.6mm_Pitch2.54mm</footprint>
+      <datasheet>/home/ali/src/kicad/projects/reservoir_controller/datasheets/EL817.pdf</datasheet>
+      <libsource lib="Isolator" part="PC817" description="DC Optocoupler, Vce 35V, CTR 50-300%, DIP4"/>
+      <sheetpath names="/Reservoir empty/" tstamps="/5B461ACF/"/>
+      <tstamp>5B507D88</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>330</value>
+      <footprint>alis_parts:R_0603</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Reservoir empty/" tstamps="/5B461ACF/"/>
+      <tstamp>5B5080EC</tstamp>
+    </comp>
+    <comp ref="D8">
+      <value>LED</value>
+      <footprint>alis_parts:LED-0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Reservoir Empty LED/" tstamps="/5B461AE0/"/>
+      <tstamp>5A4125F9</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>330</value>
+      <footprint>alis_parts:R_0603</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Reservoir Empty LED/" tstamps="/5B461AE0/"/>
+      <tstamp>5A4125FC</tstamp>
+    </comp>
+    <comp ref="D9">
+      <value>LED</value>
+      <footprint>alis_parts:LED-0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Reservoir full LED/" tstamps="/5B461AF1/"/>
+      <tstamp>5A4125F9</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>330</value>
+      <footprint>alis_parts:R_0603</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Reservoir full LED/" tstamps="/5B461AF1/"/>
+      <tstamp>5A4125FC</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>LM2594HVM-3.3</value>
+      <footprint>alis_parts:SOIC-8-1EP_3.9x4.9mm_Pitch1.27mm</footprint>
+      <datasheet>/home/ali/src/kicad/projects/reservoir_controller/datasheets/lm2594hv.pdf</datasheet>
+      <libsource lib="reservoir_controller-rescue" part="LM2594HVM-3.3-lm2594m" description=""/>
+      <sheetpath names="/LM2594/" tstamps="/5B463A7B/"/>
+      <tstamp>5B463B19</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>68uF</value>
+      <footprint>alis_parts:CP_Tantalum_Case-C_EIA-6032-28_Reflow</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/LM2594/" tstamps="/5B463A7B/"/>
+      <tstamp>5B506C9A</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>120uF</value>
+      <footprint>alis_parts:CP_Tantalum_Case-D_EIA-7343-31_Reflow</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/LM2594/" tstamps="/5B463A7B/"/>
+      <tstamp>5B506D18</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>100uH</value>
+      <footprint>alis_parts:Choke_SMD_7.3x7.3_H4.5</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <sheetpath names="/LM2594/" tstamps="/5B463A7B/"/>
+      <tstamp>5B506DBE</tstamp>
+    </comp>
+    <comp ref="D10">
+      <value>1N5817</value>
+      <footprint>alis_parts:D_SMA</footprint>
+      <libsource lib="reservoir_controller-rescue" part="D_Schottky-device-autodoser-rescue" description=""/>
+      <sheetpath names="/LM2594/" tstamps="/5B463A7B/"/>
+      <tstamp>5B506F2D</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>Conn_01x02-conn</value>
+      <footprint>alis_parts:Pin_Header_Straight_1x02_Pitch2.54mm</footprint>
+      <libsource lib="reservoir_controller-rescue" part="Conn_01x02-conn-autodoser-rescue" description=""/>
+      <sheetpath names="/LM2594/" tstamps="/5B463A7B/"/>
+      <tstamp>5B508ABC</tstamp>
+    </comp>
+    <comp ref="M1">
+      <value>MOUNTING_HOLE</value>
+      <footprint>alis_parts:MountingHole_3.2mm_M3</footprint>
+      <libsource lib="alis_parts" part="MOUNTING_HOLE" description=""/>
+      <sheetpath names="/Mechanical/" tstamps="/5B5268D3/"/>
+      <tstamp>5B526945</tstamp>
+    </comp>
+    <comp ref="M2">
+      <value>MOUNTING_HOLE</value>
+      <footprint>alis_parts:MountingHole_3.2mm_M3</footprint>
+      <libsource lib="alis_parts" part="MOUNTING_HOLE" description=""/>
+      <sheetpath names="/Mechanical/" tstamps="/5B5268D3/"/>
+      <tstamp>5B5269AF</tstamp>
+    </comp>
+    <comp ref="M3">
+      <value>MOUNTING_HOLE</value>
+      <footprint>alis_parts:MountingHole_3.2mm_M3</footprint>
+      <libsource lib="alis_parts" part="MOUNTING_HOLE" description=""/>
+      <sheetpath names="/Mechanical/" tstamps="/5B5268D3/"/>
+      <tstamp>5B526A03</tstamp>
+    </comp>
+    <comp ref="M4">
+      <value>MOUNTING_HOLE</value>
+      <footprint>alis_parts:MountingHole_3.2mm_M3</footprint>
+      <libsource lib="alis_parts" part="MOUNTING_HOLE" description=""/>
+      <sheetpath names="/Mechanical/" tstamps="/5B5268D3/"/>
+      <tstamp>5B526A25</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="CP">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D">
+      <description>Diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_NMOS_GDS">
+      <description>N-MOSFET transistor, gate/drain/source</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NMOS_GDS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="D" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Isolator" part="PC817">
+      <description>DC Optocoupler, Vce 35V, CTR 50-300%, DIP4</description>
+      <docs>http://www.soselectronic.cz/a_info/resource/d/pc817.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PC817</field>
+        <field name="Footprint">Package_DIP:DIP-4_W7.62mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="alis_parts" part="ESP-12E">
+      <footprints>
+        <fp>ESP-12E</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP-12E</field>
+      </fields>
+      <pins>
+        <pin num="1" name="REST" type="input"/>
+        <pin num="2" name="ADC" type="passive"/>
+        <pin num="3" name="CH_PD" type="input"/>
+        <pin num="4" name="GPIO16" type="BiDi"/>
+        <pin num="5" name="GPIO14" type="BiDi"/>
+        <pin num="6" name="GPIO12" type="BiDi"/>
+        <pin num="7" name="GPIO13" type="BiDi"/>
+        <pin num="8" name="VCC" type="power_in"/>
+        <pin num="9" name="CS0" type="BiDi"/>
+        <pin num="10" name="MISO" type="BiDi"/>
+        <pin num="11" name="GPIO9" type="BiDi"/>
+        <pin num="12" name="GPIO10" type="BiDi"/>
+        <pin num="13" name="MOSI" type="BiDi"/>
+        <pin num="14" name="SCLK" type="BiDi"/>
+        <pin num="15" name="GND" type="power_in"/>
+        <pin num="16" name="GPIO15" type="BiDi"/>
+        <pin num="17" name="GPIO2" type="BiDi"/>
+        <pin num="18" name="GPIO0" type="BiDi"/>
+        <pin num="19" name="GPIO4" type="BiDi"/>
+        <pin num="20" name="GPIO5" type="BiDi"/>
+        <pin num="21" name="RXD" type="input"/>
+        <pin num="22" name="TXD" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="alis_parts" part="MOUNTING_HOLE">
+      <fields>
+        <field name="Reference">M</field>
+        <field name="Value">MOUNTING_HOLE</field>
+      </fields>
+      <pins>
+        <pin num="~" name="~" type="NotConnected"/>
+      </pins>
+    </libpart>
+    <libpart lib="alis_parts" part="SW_PUSH">
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_PUSH</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="pspice" part="R">
+      <description>Resistor symbol for simulation only</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="reservoir_controller-rescue" part="Conn_01x02-conn-autodoser-rescue">
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02-conn-autodoser-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="reservoir_controller-rescue" part="Conn_02x03_Counter_Clockwise-conn-autodoser-rescue">
+      <footprints>
+        <fp>Connector*:*2x??x*mm*</fp>
+        <fp>Connector*:*2x???Pitch*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x03_Counter_Clockwise-conn-autodoser-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="reservoir_controller-rescue" part="D_Schottky-device-autodoser-rescue">
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky-device-autodoser-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="reservoir_controller-rescue" part="LM2594HVM-3.3-lm2594m">
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM2594HVM-3.3-lm2594m</field>
+        <field name="Footprint">Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="passive"/>
+        <pin num="2" name="NC" type="passive"/>
+        <pin num="3" name="NC" type="passive"/>
+        <pin num="4" name="FB" type="input"/>
+        <pin num="5" name="~ON~/OFF" type="input"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="VIN" type="power_in"/>
+        <pin num="8" name="OUT" type="output"/>
+        <pin num="9" name="Pad" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>/usr/share/kicad/library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="Isolator">
+      <uri>/usr/share/kicad/library/Isolator.lib</uri>
+    </library>
+    <library logical="alis_parts">
+      <uri>/home/ali/src/kicad/alis_parts/alis_parts.lib</uri>
+    </library>
+    <library logical="pspice">
+      <uri>/usr/share/kicad/library/pspice.lib</uri>
+    </library>
+    <library logical="reservoir_controller-rescue">
+      <uri>/home/ali/src/kicad/projects/reservoir_controller/reservoir_controller-rescue.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/ESP-12E/ESP_GPIO13">
+      <node ref="D9" pin="2"/>
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="2" name="/ESP-12E/ESP_GPIO4">
+      <node ref="R14" pin="1"/>
+      <node ref="Q2" pin="1"/>
+      <node ref="R13" pin="1"/>
+      <node ref="U1" pin="19"/>
+    </net>
+    <net code="3" name="/ESP-12E/ESP_GPIO5">
+      <node ref="Q3" pin="1"/>
+      <node ref="R15" pin="1"/>
+      <node ref="U1" pin="20"/>
+      <node ref="R16" pin="1"/>
+    </net>
+    <net code="4" name="/ESP-12E/ESP_GPIO16">
+      <node ref="U3" pin="4"/>
+      <node ref="U1" pin="4"/>
+      <node ref="R18" pin="2"/>
+    </net>
+    <net code="5" name="/ESP-12E/ESP_GPIO14">
+      <node ref="U1" pin="5"/>
+      <node ref="U2" pin="4"/>
+      <node ref="R12" pin="2"/>
+    </net>
+    <net code="6" name="/ESP-12E/ESP_RXD">
+      <node ref="J1" pin="6"/>
+      <node ref="U1" pin="21"/>
+    </net>
+    <net code="7" name="/ESP-12E/ESP_GPIO12">
+      <node ref="D8" pin="2"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="8" name="/ESP-12E/ESP_GPIO9">
+      <node ref="U1" pin="11"/>
+      <node ref="D3" pin="2"/>
+    </net>
+    <net code="9" name="/ESP-12E/ESP_ADC">
+      <node ref="R5" pin="2"/>
+      <node ref="R6" pin="1"/>
+      <node ref="R9" pin="2"/>
+      <node ref="R7" pin="2"/>
+      <node ref="R8" pin="2"/>
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="10" name="/ESP-12E/ESP_TXD">
+      <node ref="U1" pin="22"/>
+      <node ref="J1" pin="5"/>
+    </net>
+    <net code="11" name="/ESP-12E/ESP_GPIO10">
+      <node ref="Q1" pin="1"/>
+      <node ref="U1" pin="12"/>
+      <node ref="R3" pin="1"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="12" name="Net-(R1-Pad1)">
+      <node ref="U1" pin="3"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="13" name="+3V3">
+      <node ref="U4" pin="4"/>
+      <node ref="R18" pin="1"/>
+      <node ref="R12" pin="1"/>
+      <node ref="L1" pin="1"/>
+      <node ref="R11" pin="1"/>
+      <node ref="R17" pin="1"/>
+      <node ref="C5" pin="1"/>
+      <node ref="J1" pin="2"/>
+      <node ref="R2" pin="1"/>
+      <node ref="U1" pin="8"/>
+      <node ref="R5" pin="1"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="14" name="GND">
+      <node ref="U3" pin="3"/>
+      <node ref="U4" pin="3"/>
+      <node ref="R13" pin="2"/>
+      <node ref="U4" pin="2"/>
+      <node ref="U4" pin="1"/>
+      <node ref="J6" pin="1"/>
+      <node ref="D6" pin="1"/>
+      <node ref="Q2" pin="3"/>
+      <node ref="D1" pin="1"/>
+      <node ref="R19" pin="2"/>
+      <node ref="U1" pin="15"/>
+      <node ref="U1" pin="16"/>
+      <node ref="R15" pin="2"/>
+      <node ref="D10" pin="2"/>
+      <node ref="J1" pin="3"/>
+      <node ref="Q3" pin="3"/>
+      <node ref="U4" pin="6"/>
+      <node ref="R10" pin="2"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="J3" pin="1"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="R6" pin="2"/>
+      <node ref="R3" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="D4" pin="1"/>
+      <node ref="C5" pin="2"/>
+      <node ref="SW2" pin="2"/>
+      <node ref="SW3" pin="2"/>
+      <node ref="U4" pin="9"/>
+      <node ref="J7" pin="1"/>
+      <node ref="R20" pin="2"/>
+      <node ref="U2" pin="3"/>
+      <node ref="U4" pin="5"/>
+    </net>
+    <net code="15" name="Net-(U1-Pad9)">
+      <node ref="U1" pin="9"/>
+    </net>
+    <net code="16" name="Net-(U1-Pad14)">
+      <node ref="U1" pin="14"/>
+    </net>
+    <net code="17" name="Net-(U1-Pad13)">
+      <node ref="U1" pin="13"/>
+    </net>
+    <net code="18" name="Net-(U1-Pad10)">
+      <node ref="U1" pin="10"/>
+    </net>
+    <net code="19" name="Net-(R2-Pad2)">
+      <node ref="R2" pin="2"/>
+      <node ref="U1" pin="17"/>
+    </net>
+    <net code="20" name="/ESP-12E/gpio0">
+      <node ref="U1" pin="18"/>
+      <node ref="J1" pin="4"/>
+    </net>
+    <net code="21" name="/ESP-12E/reset">
+      <node ref="U1" pin="1"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="22" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="23" name="Net-(C1-Pad2)">
+      <node ref="Q1" pin="2"/>
+      <node ref="J2" pin="1"/>
+      <node ref="D2" pin="2"/>
+      <node ref="C1" pin="2"/>
+    </net>
+    <net code="24" name="+12V">
+      <node ref="J7" pin="2"/>
+      <node ref="C2" pin="1"/>
+      <node ref="D5" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="D2" pin="1"/>
+      <node ref="U4" pin="7"/>
+      <node ref="J2" pin="2"/>
+      <node ref="C4" pin="1"/>
+      <node ref="J5" pin="2"/>
+      <node ref="D7" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="J4" pin="2"/>
+    </net>
+    <net code="25" name="Net-(R7-Pad1)">
+      <node ref="R7" pin="1"/>
+      <node ref="SW1" pin="1"/>
+    </net>
+    <net code="26" name="Net-(R8-Pad1)">
+      <node ref="SW2" pin="1"/>
+      <node ref="R8" pin="1"/>
+    </net>
+    <net code="27" name="Net-(R9-Pad1)">
+      <node ref="SW3" pin="1"/>
+      <node ref="R9" pin="1"/>
+    </net>
+    <net code="28" name="Net-(D3-Pad1)">
+      <node ref="D3" pin="1"/>
+      <node ref="R10" pin="1"/>
+    </net>
+    <net code="29" name="Net-(R11-Pad2)">
+      <node ref="U2" pin="1"/>
+      <node ref="R11" pin="2"/>
+    </net>
+    <net code="30" name="Net-(J3-Pad2)">
+      <node ref="U2" pin="2"/>
+      <node ref="J3" pin="2"/>
+    </net>
+    <net code="31" name="Net-(D4-Pad2)">
+      <node ref="D4" pin="2"/>
+      <node ref="R14" pin="2"/>
+    </net>
+    <net code="32" name="Net-(C2-Pad2)">
+      <node ref="D5" pin="2"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="J4" pin="1"/>
+    </net>
+    <net code="33" name="Net-(D6-Pad2)">
+      <node ref="D6" pin="2"/>
+      <node ref="R16" pin="2"/>
+    </net>
+    <net code="34" name="Net-(C3-Pad2)">
+      <node ref="C3" pin="2"/>
+      <node ref="D7" pin="2"/>
+      <node ref="J5" pin="1"/>
+      <node ref="Q3" pin="2"/>
+    </net>
+    <net code="35" name="Net-(R17-Pad2)">
+      <node ref="U3" pin="1"/>
+      <node ref="R17" pin="2"/>
+    </net>
+    <net code="36" name="Net-(J6-Pad2)">
+      <node ref="J6" pin="2"/>
+      <node ref="U3" pin="2"/>
+    </net>
+    <net code="37" name="Net-(D8-Pad1)">
+      <node ref="R19" pin="1"/>
+      <node ref="D8" pin="1"/>
+    </net>
+    <net code="38" name="Net-(D9-Pad1)">
+      <node ref="R20" pin="1"/>
+      <node ref="D9" pin="1"/>
+    </net>
+    <net code="39" name="Net-(D10-Pad1)">
+      <node ref="D10" pin="1"/>
+      <node ref="U4" pin="8"/>
+      <node ref="L1" pin="2"/>
+    </net>
+    <net code="40" name="Net-(M1-Pad~)">
+      <node ref="M1" pin="~"/>
+    </net>
+    <net code="41" name="Net-(M2-Pad~)">
+      <node ref="M2" pin="~"/>
+    </net>
+    <net code="42" name="Net-(M3-Pad~)">
+      <node ref="M3" pin="~"/>
+    </net>
+    <net code="43" name="Net-(M4-Pad~)">
+      <node ref="M4" pin="~"/>
+    </net>
+  </nets>
+</export>

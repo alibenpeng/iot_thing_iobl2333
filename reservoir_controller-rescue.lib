@@ -1,0 +1,118 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# +3.3V-autodoser-cache
+#
+DEF +3.3V-autodoser-cache #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "+3.3V-autodoser-cache" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# Conn_01x02-conn-autodoser-rescue
+#
+DEF Conn_01x02-conn-autodoser-rescue J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Conn_01x02-conn-autodoser-rescue" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Conn_02x03_Counter_Clockwise-conn-autodoser-rescue
+#
+DEF Conn_02x03_Counter_Clockwise-conn-autodoser-rescue J 0 40 Y N 1 F N
+F0 "J" 50 200 50 H V C CNN
+F1 "Conn_02x03_Counter_Clockwise-conn-autodoser-rescue" 50 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*2x??x*mm*
+ Connector*:*2x???Pitch*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 150 -150 1 1 10 f
+S 150 -95 100 -105 1 1 6 N
+S 150 5 100 -5 1 1 6 N
+S 150 105 100 95 1 1 6 N
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+X Pin_4 4 300 -100 150 L 50 50 1 1 P
+X Pin_5 5 300 0 150 L 50 50 1 1 P
+X Pin_6 6 300 100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# D_Schottky-device-autodoser-rescue
+#
+DEF D_Schottky-device-autodoser-rescue D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "D_Schottky-device-autodoser-rescue" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *SingleDiode
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+P 6 0 1 8 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# LM2594HVM-3.3-lm2594m
+#
+DEF LM2594HVM-3.3-lm2594m U 0 20 Y Y 1 F N
+F0 "U" -300 250 50 H V L CNN
+F1 "LM2594HVM-3.3-lm2594m" 0 250 50 H V L CNN
+F2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" 200 -250 50 H I L CIN
+F3 "" 0 100 50 H I C CNN
+$FPLIST
+ SOIC*3.9x4.9mm*
+$ENDFPLIST
+DRAW
+S -300 200 300 -200 0 1 10 f
+X NC 1 -200 -300 100 U 50 50 1 1 P
+X NC 2 -100 -300 100 U 50 50 1 1 P
+X NC 3 0 -300 100 U 50 50 1 1 P
+X FB 4 400 100 100 L 50 50 1 1 I
+X ~ON~/OFF 5 -400 0 100 R 50 50 1 1 I
+X GND 6 200 -300 100 U 50 50 1 1 W
+X VIN 7 -400 100 100 R 50 50 1 1 W
+X OUT 8 400 0 100 L 50 50 1 1 O
+X Pad 9 100 -300 100 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+#End Library
