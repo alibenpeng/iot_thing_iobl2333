@@ -1,6 +1,5 @@
-EESchema Schematic File Version 4
-LIBS:reservoir_controller-cache
-EELAYER 26 0
+EESchema Schematic File Version 5
+EELAYER 32 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -13,38 +12,95 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
 $EndDescr
+Connection ~ 6350 3650
+Connection ~ 7150 3650
+Connection ~ 7150 3550
+Connection ~ 4700 3550
+Connection ~ 4700 4000
+Connection ~ 6000 4100
+Connection ~ 5700 4100
+Connection ~ 5800 4100
+Connection ~ 5900 4100
+Wire Wire Line
+	4250 3550 4700 3550
+Wire Wire Line
+	4250 3650 4250 4000
+Wire Wire Line
+	4250 4000 4700 4000
+Wire Wire Line
+	4700 3300 4700 3550
+Wire Wire Line
+	4700 3550 5400 3550
+Wire Wire Line
+	4700 3850 4700 4000
+Wire Wire Line
+	4700 4000 4700 4100
+Wire Wire Line
+	5200 3650 5400 3650
+Wire Wire Line
+	5200 4100 5200 3650
+Wire Wire Line
+	5600 3950 5600 4100
+Wire Wire Line
+	5600 4100 5700 4100
+Wire Wire Line
+	5700 3950 5700 4100
+Wire Wire Line
+	5700 4100 5800 4100
+Wire Wire Line
+	5800 3950 5800 4100
+Wire Wire Line
+	5800 4100 5900 4100
+Wire Wire Line
+	5900 3950 5900 4100
+Wire Wire Line
+	5900 4100 6000 4100
+Wire Wire Line
+	6000 4100 6000 3950
+Wire Wire Line
+	6200 3550 7150 3550
+Wire Wire Line
+	6350 3650 6200 3650
+Wire Wire Line
+	6350 4100 6350 3950
+Wire Wire Line
+	6500 3650 6350 3650
+Wire Wire Line
+	6800 3650 7150 3650
+Wire Wire Line
+	7150 3300 7150 3550
+Wire Wire Line
+	7150 3550 7150 3650
+Wire Wire Line
+	7150 3950 7150 4100
 $Comp
-L lm2594m:LM2594HVM-3.3 U4
-U 1 1 5B463B19
-P 5800 3650
-F 0 "U4" H 5800 4017 50  0000 C CNN
-F 1 "LM2594HVM-3.3" H 5800 3926 50  0000 C CNN
-F 2 "alis_parts:SOIC-8-1EP_3.9x4.9mm_Pitch1.27mm" H 6000 3400 50  0001 L CIN
-F 3 "/home/ali/src/kicad/projects/reservoir_controller/datasheets/lm2594hv.pdf" H 5800 3750 50  0001 C CNN
-	1    5800 3650
+L power:+12V #PWR0125
+U 1 1 5B5071E7
+P 4700 3300
+F 0 "#PWR0125" H 4700 3150 50  0001 C CNN
+F 1 "+12V" H 4715 3473 50  0000 C CNN
+F 2 "" H 4700 3300 50  0001 C CNN
+F 3 "" H 4700 3300 50  0001 C CNN
+	1    4700 3300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C4
-U 1 1 5B506C9A
-P 4700 3700
-F 0 "C4" H 4818 3746 50  0000 L CNN
-F 1 "68uF" H 4818 3655 50  0000 L CNN
-F 2 "alis_parts:CP_Tantalum_Case-C_EIA-6032-28_Reflow" H 4738 3550 50  0001 C CNN
-F 3 "~" H 4700 3700 50  0001 C CNN
-	1    4700 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C5
-U 1 1 5B506D18
-P 7150 3800
-F 0 "C5" H 7268 3846 50  0000 L CNN
-F 1 "120uF" H 7268 3755 50  0000 L CNN
-F 2 "alis_parts:CP_Tantalum_Case-D_EIA-7343-31_Reflow" H 7188 3650 50  0001 C CNN
-F 3 "~" H 7150 3800 50  0001 C CNN
-	1    7150 3800
+L reservoir_controller-rescue:+3.3V-autodoser-cache #PWR0126
+U 1 1 5B50723B
+P 7150 3300
+AR Path="/5B50723B" Ref="#PWR0126"  Part="1" 
+AR Path="/5B463A7B/5B50723B" Ref="#PWR0126"  Part="1" 
+F 0 "#PWR0126" H 7150 3150 50  0001 C CNN
+F 1 "+3.3V" H 7165 3473 50  0000 C CNN
+F 2 "" H 7150 3300 50  0001 C CNN
+F 3 "" H 7150 3300 50  0001 C CNN
+	1    7150 3300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -59,15 +115,37 @@ F 3 "~" H 6650 3650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L autodoser-rescue:D_Schottky-device D10
-U 1 1 5B506F2D
-P 6350 3800
-F 0 "D10" V 6304 3879 50  0000 L CNN
-F 1 "1N5817" V 6395 3879 50  0000 L CNN
-F 2 "alis_parts:D_SMA" H 6350 3800 50  0001 C CNN
-F 3 "" H 6350 3800 50  0001 C CNN
-	1    6350 3800
-	0    1    1    0   
+L fb20-5v0.2:GND #SUPPLY0105
+U 1 1 5B506FE7
+P 4700 4200
+F 0 "#SUPPLY0105" H 4700 4200 50  0001 L BNN
+F 1 "GND" H 4700 4077 50  0000 C CNN
+F 2 "" H 4700 4200 50  0001 C CNN
+F 3 "" H 4700 4200 50  0001 C CNN
+	1    4700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L fb20-5v0.2:GND #SUPPLY0106
+U 1 1 5B506FFC
+P 5200 4200
+F 0 "#SUPPLY0106" H 5200 4200 50  0001 L BNN
+F 1 "GND" H 5200 4077 50  0000 C CNN
+F 2 "" H 5200 4200 50  0001 C CNN
+F 3 "" H 5200 4200 50  0001 C CNN
+	1    5200 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L fb20-5v0.2:GND #SUPPLY0107
+U 1 1 5B5073E1
+P 6000 4200
+F 0 "#SUPPLY0107" H 6000 4200 50  0001 L BNN
+F 1 "GND" H 6000 4077 50  0000 C CNN
+F 2 "" H 6000 4200 50  0001 C CNN
+F 3 "" H 6000 4200 50  0001 C CNN
+	1    6000 4200
+	1    0    0    -1  
 $EndComp
 $Comp
 L fb20-5v0.2:GND #SUPPLY0103
@@ -92,94 +170,18 @@ F 3 "" H 7150 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L fb20-5v0.2:GND #SUPPLY0105
-U 1 1 5B506FE7
-P 4700 4200
-F 0 "#SUPPLY0105" H 4700 4200 50  0001 L BNN
-F 1 "GND" H 4700 4077 50  0000 C CNN
-F 2 "" H 4700 4200 50  0001 C CNN
-F 3 "" H 4700 4200 50  0001 C CNN
-	1    4700 4200
-	1    0    0    -1  
+L reservoir_controller-rescue:D_Schottky-device-autodoser-rescue D10
+U 1 1 5B506F2D
+P 6350 3800
+F 0 "D10" V 6304 3879 50  0000 L CNN
+F 1 "1N5817" V 6395 3879 50  0000 L CNN
+F 2 "alis_parts:D_SMA" H 6350 3800 50  0001 C CNN
+F 3 "" H 6350 3800 50  0001 C CNN
+	1    6350 3800
+	0    1    1    0   
 $EndComp
 $Comp
-L fb20-5v0.2:GND #SUPPLY0106
-U 1 1 5B506FFC
-P 5200 4200
-F 0 "#SUPPLY0106" H 5200 4200 50  0001 L BNN
-F 1 "GND" H 5200 4077 50  0000 C CNN
-F 2 "" H 5200 4200 50  0001 C CNN
-F 3 "" H 5200 4200 50  0001 C CNN
-	1    5200 4200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 4100 5200 3650
-Wire Wire Line
-	5200 3650 5400 3650
-Wire Wire Line
-	4700 3550 5400 3550
-Wire Wire Line
-	4700 3850 4700 4000
-Wire Wire Line
-	6350 4100 6350 3950
-Wire Wire Line
-	6350 3650 6200 3650
-Wire Wire Line
-	6500 3650 6350 3650
-Connection ~ 6350 3650
-Wire Wire Line
-	6800 3650 7150 3650
-Wire Wire Line
-	7150 3950 7150 4100
-Wire Wire Line
-	6200 3550 7150 3550
-Wire Wire Line
-	7150 3550 7150 3650
-Connection ~ 7150 3650
-$Comp
-L power:+12V #PWR0125
-U 1 1 5B5071E7
-P 4700 3300
-F 0 "#PWR0125" H 4700 3150 50  0001 C CNN
-F 1 "+12V" H 4715 3473 50  0000 C CNN
-F 2 "" H 4700 3300 50  0001 C CNN
-F 3 "" H 4700 3300 50  0001 C CNN
-	1    4700 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L autodoser-cache:+3.3V #PWR0126
-U 1 1 5B50723B
-P 7150 3300
-F 0 "#PWR0126" H 7150 3150 50  0001 C CNN
-F 1 "+3.3V" H 7165 3473 50  0000 C CNN
-F 2 "" H 7150 3300 50  0001 C CNN
-F 3 "" H 7150 3300 50  0001 C CNN
-	1    7150 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 3300 7150 3550
-Connection ~ 7150 3550
-Wire Wire Line
-	4700 3300 4700 3550
-Connection ~ 4700 3550
-$Comp
-L fb20-5v0.2:GND #SUPPLY0107
-U 1 1 5B5073E1
-P 6000 4200
-F 0 "#SUPPLY0107" H 6000 4200 50  0001 L BNN
-F 1 "GND" H 6000 4077 50  0000 C CNN
-F 2 "" H 6000 4200 50  0001 C CNN
-F 3 "" H 6000 4200 50  0001 C CNN
-	1    6000 4200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6000 4100 6000 3950
-$Comp
-L autodoser-rescue:Conn_01x02-conn J7
+L reservoir_controller-rescue:Conn_01x02-conn-autodoser-rescue J7
 U 1 1 5B508ABC
 P 4050 3650
 F 0 "J7" H 3970 3325 50  0000 C CNN
@@ -189,33 +191,37 @@ F 3 "" H 4050 3650 50  0001 C CNN
 	1    4050 3650
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4250 3550 4700 3550
-Wire Wire Line
-	4250 3650 4250 4000
-Wire Wire Line
-	4250 4000 4700 4000
-Connection ~ 4700 4000
-Wire Wire Line
-	4700 4000 4700 4100
-Wire Wire Line
-	5600 3950 5600 4100
-Wire Wire Line
-	5600 4100 5700 4100
-Connection ~ 6000 4100
-Wire Wire Line
-	5700 3950 5700 4100
-Connection ~ 5700 4100
-Wire Wire Line
-	5700 4100 5800 4100
-Wire Wire Line
-	5800 3950 5800 4100
-Connection ~ 5800 4100
-Wire Wire Line
-	5800 4100 5900 4100
-Wire Wire Line
-	5900 3950 5900 4100
-Connection ~ 5900 4100
-Wire Wire Line
-	5900 4100 6000 4100
+$Comp
+L Device:CP C4
+U 1 1 5B506C9A
+P 4700 3700
+F 0 "C4" H 4818 3746 50  0000 L CNN
+F 1 "68uF" H 4818 3655 50  0000 L CNN
+F 2 "alis_parts:CP_Tantalum_Case-C_EIA-6032-28_Reflow" H 4738 3550 50  0001 C CNN
+F 3 "~" H 4700 3700 50  0001 C CNN
+	1    4700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C5
+U 1 1 5B506D18
+P 7150 3800
+F 0 "C5" H 7268 3846 50  0000 L CNN
+F 1 "120uF" H 7268 3755 50  0000 L CNN
+F 2 "alis_parts:CP_Tantalum_Case-D_EIA-7343-31_Reflow" H 7188 3650 50  0001 C CNN
+F 3 "~" H 7150 3800 50  0001 C CNN
+	1    7150 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L reservoir_controller-rescue:LM2594HVM-3.3-lm2594m U4
+U 1 1 5B463B19
+P 5800 3650
+F 0 "U4" H 5800 4017 50  0000 C CNN
+F 1 "LM2594HVM-3.3" H 5800 3926 50  0000 C CNN
+F 2 "alis_parts:SOIC-8-1EP_3.9x4.9mm_Pitch1.27mm" H 6000 3400 50  0001 L CIN
+F 3 "/home/ali/src/kicad/projects/reservoir_controller/datasheets/lm2594hv.pdf" H 5800 3750 50  0001 C CNN
+	1    5800 3650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

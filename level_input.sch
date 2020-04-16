@@ -1,6 +1,5 @@
-EESchema Schematic File Version 4
-LIBS:reservoir_controller-cache
-EELAYER 26 0
+EESchema Schematic File Version 5
+EELAYER 32 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -13,7 +12,53 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
 $EndDescr
+Connection ~ 6250 3700
+Wire Wire Line
+	5150 3100 5150 3300
+Wire Wire Line
+	5150 3600 5150 3700
+Wire Wire Line
+	5150 3700 5400 3700
+Wire Wire Line
+	5150 4150 5150 4000
+Wire Wire Line
+	5400 3900 5150 3900
+Wire Wire Line
+	6000 3700 6250 3700
+Wire Wire Line
+	6000 3900 6250 3900
+Wire Wire Line
+	6250 3100 6250 3250
+Wire Wire Line
+	6250 3550 6250 3700
+Wire Wire Line
+	6250 3700 7300 3700
+Wire Wire Line
+	6250 3900 6250 4150
+Text HLabel 7300 3700 2    60   Output ~ 0
+output
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5B5082C7
+P 5150 3100
+AR Path="/5A3BFD6E/5B5082C7" Ref="#PWR?"  Part="1" 
+AR Path="/5A3C5C76/5B5082C7" Ref="#PWR?"  Part="1" 
+AR Path="/5A3C6267/5B5082C7" Ref="#PWR?"  Part="1" 
+AR Path="/5B4616A0/5B5082C7" Ref="#PWR0113"  Part="1" 
+AR Path="/5B461ACF/5B5082C7" Ref="#PWR0121"  Part="1" 
+F 0 "#PWR0121" H 5150 2950 50  0001 C CNN
+F 1 "+3V3" H 5165 3273 50  0000 C CNN
+F 2 "" H 5150 3100 50  0001 C CNN
+F 3 "" H 5150 3100 50  0001 C CNN
+	1    5150 3100
+	1    0    0    -1  
+$EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5A3B9818
@@ -28,6 +73,22 @@ F 1 "+3V3" H 6265 3273 50  0000 C CNN
 F 2 "" H 6250 3100 50  0001 C CNN
 F 3 "" H 6250 3100 50  0001 C CNN
 	1    6250 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B508408
+P 5150 4150
+AR Path="/5A3BFD6E/5B508408" Ref="#PWR?"  Part="1" 
+AR Path="/5A3C5C76/5B508408" Ref="#PWR?"  Part="1" 
+AR Path="/5A3C6267/5B508408" Ref="#PWR?"  Part="1" 
+AR Path="/5B4616A0/5B508408" Ref="#PWR0114"  Part="1" 
+AR Path="/5B461ACF/5B508408" Ref="#PWR0122"  Part="1" 
+F 0 "#PWR0122" H 5150 3900 50  0001 C CNN
+F 1 "GND" H 5155 3977 50  0000 C CNN
+F 2 "" H 5150 4150 50  0001 C CNN
+F 3 "" H 5150 4150 50  0001 C CNN
+	1    5150 4150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -48,6 +109,22 @@ F 3 "" H 6250 4150 50  0001 C CNN
 $EndComp
 $Comp
 L Device:R R?
+U 1 1 5B5080EC
+P 5150 3450
+AR Path="/5A3BFD6E/5B5080EC" Ref="R?"  Part="1" 
+AR Path="/5A3C5C76/5B5080EC" Ref="R?"  Part="1" 
+AR Path="/5A3C6267/5B5080EC" Ref="R?"  Part="1" 
+AR Path="/5B4616A0/5B5080EC" Ref="R11"  Part="1" 
+AR Path="/5B461ACF/5B5080EC" Ref="R17"  Part="1" 
+F 0 "R17" V 4943 3450 50  0000 C CNN
+F 1 "330" V 5034 3450 50  0000 C CNN
+F 2 "alis_parts:R_0603" V 5080 3450 50  0001 C CNN
+F 3 "" H 5150 3450 50  0001 C CNN
+	1    5150 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
 U 1 1 5A400B29
 P 6250 3400
 AR Path="/5A3BFD6E/5A400B29" Ref="R?"  Part="1" 
@@ -62,10 +139,6 @@ F 3 "" H 6250 3400 50  0001 C CNN
 	1    6250 3400
 	1    0    0    -1  
 $EndComp
-Text HLabel 7300 3700 2    60   Output ~ 0
-output
-Wire Wire Line
-	6250 3100 6250 3250
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 5A3C5300
@@ -95,73 +168,4 @@ F 3 "/home/ali/src/kicad/projects/reservoir_controller/datasheets/EL817.pdf" H 5
 	1    5700 3800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6000 3700 6250 3700
-Wire Wire Line
-	6250 3550 6250 3700
-Connection ~ 6250 3700
-Wire Wire Line
-	6000 3900 6250 3900
-Wire Wire Line
-	6250 3900 6250 4150
-$Comp
-L Device:R R?
-U 1 1 5B5080EC
-P 5150 3450
-AR Path="/5A3BFD6E/5B5080EC" Ref="R?"  Part="1" 
-AR Path="/5A3C5C76/5B5080EC" Ref="R?"  Part="1" 
-AR Path="/5A3C6267/5B5080EC" Ref="R?"  Part="1" 
-AR Path="/5B4616A0/5B5080EC" Ref="R11"  Part="1" 
-AR Path="/5B461ACF/5B5080EC" Ref="R17"  Part="1" 
-F 0 "R17" V 4943 3450 50  0000 C CNN
-F 1 "330" V 5034 3450 50  0000 C CNN
-F 2 "alis_parts:R_0603" V 5080 3450 50  0001 C CNN
-F 3 "" H 5150 3450 50  0001 C CNN
-	1    5150 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5B5082C7
-P 5150 3100
-AR Path="/5A3BFD6E/5B5082C7" Ref="#PWR?"  Part="1" 
-AR Path="/5A3C5C76/5B5082C7" Ref="#PWR?"  Part="1" 
-AR Path="/5A3C6267/5B5082C7" Ref="#PWR?"  Part="1" 
-AR Path="/5B4616A0/5B5082C7" Ref="#PWR0113"  Part="1" 
-AR Path="/5B461ACF/5B5082C7" Ref="#PWR0121"  Part="1" 
-F 0 "#PWR0121" H 5150 2950 50  0001 C CNN
-F 1 "+3V3" H 5165 3273 50  0000 C CNN
-F 2 "" H 5150 3100 50  0001 C CNN
-F 3 "" H 5150 3100 50  0001 C CNN
-	1    5150 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5150 3100 5150 3300
-Wire Wire Line
-	5150 3600 5150 3700
-Wire Wire Line
-	5150 3700 5400 3700
-Wire Wire Line
-	5400 3900 5150 3900
-$Comp
-L power:GND #PWR?
-U 1 1 5B508408
-P 5150 4150
-AR Path="/5A3BFD6E/5B508408" Ref="#PWR?"  Part="1" 
-AR Path="/5A3C5C76/5B508408" Ref="#PWR?"  Part="1" 
-AR Path="/5A3C6267/5B508408" Ref="#PWR?"  Part="1" 
-AR Path="/5B4616A0/5B508408" Ref="#PWR0114"  Part="1" 
-AR Path="/5B461ACF/5B508408" Ref="#PWR0122"  Part="1" 
-F 0 "#PWR0122" H 5150 3900 50  0001 C CNN
-F 1 "GND" H 5155 3977 50  0000 C CNN
-F 2 "" H 5150 4150 50  0001 C CNN
-F 3 "" H 5150 4150 50  0001 C CNN
-	1    5150 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5150 4150 5150 4000
-Wire Wire Line
-	6250 3700 7300 3700
 $EndSCHEMATC
